@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Chhutku ❤️</title>
+<style>
+:root{--cream:#fff8f2;--pink:#e96b8c;--deep:#7d2947;--gold:#d9a441;--ink:#3b2630}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+button{font:inherit}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:28px;position:relative}
+.hero{background:radial-gradient(circle at 50% 35%,#fff,#ffe9ef 45%,#fff8f2 80%);text-align:center}
+.card{max-width:780px;width:100%;background:#ffffffd9;border:1px solid #f1c8d3;border-radius:28px;padding:36px 24px;box-shadow:0 20px 60px #7d294715;backdrop-filter:blur(8px)}
+h1{font-size:clamp(42px,10vw,82px);color:var(--deep);margin:8px 0}
+h2{font-size:clamp(30px,7vw,52px);color:var(--deep);margin:0 0 18px}
+p{font-size:clamp(17px,4vw,21px);line-height:1.75}
+.small{font-size:15px;opacity:.7}
+.btn{border:0;border-radius:999px;padding:14px 22px;margin:10px 5px;background:var(--deep);color:white;cursor:pointer;box-shadow:0 10px 25px #7d29472b;transition:.2s}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn.secondary{background:#fff;color:var(--deep);border:1px solid #e9b7c6}
+.heart{font-size:58px;animation:pulse 1.8s infinite}
+@keyframes pulse{50%{transform:scale(1.1)}}
+.hidden{display:none!important}
+.reveal{animation:rise .65s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+.timeline{display:grid;gap:10px;margin:25px auto;max-width:520px}
+.step{padding:14px;border-radius:18px;background:#fff0f4;border:1px solid #f2ccd7}
+.arrow{color:var(--pink);font-size:24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.tile{border:1px solid #efcbd5;background:#fff7fa;border-radius:20px;padding:20px;cursor:pointer;min-height:130px;transition:.25s}
+.tile:hover{transform:translateY(-3px)}
+.tile strong{display:block;color:var(--deep);font-size:20px;margin-bottom:10px}
+.answer{display:none;margin-top:10px;line-height:1.55}
+.tile.open .answer{display:block}
+.letter{background:#fffdf8;border:1px solid #e7d6b8;border-radius:18px;padding:28px;text-align:left;box-shadow:inset 0 0 35px #d9a44112}
+.letter p{font-size:18px}
+.rakhi{font-size:100px;filter:drop-shadow(0 10px 15px #d9a44144);animation:float 3s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-12px) rotate(3deg)}}
+.secret{background:#2b1820;color:#fff;border-radius:24px;padding:28px;margin-top:20px}
+.secret h2{color:#ffd8e2}
+.big{font-size:clamp(28px,8vw,58px);font-weight:bold;color:#ffb6ca}
+#petals span{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards;z-index:99}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+footer{padding:30px;text-align:center;color:#7d2947}
+</style>
+</head>
+<body>
+
+<section class="screen hero" id="start">
+<div class="card">
+<div class="heart">🎀</div>
+<div class="small">A tiny digital gift</div>
+<h1>Hey Chhutku... 👀❤️</h1>
+<p>I couldn't give you a physical gift this Rakhi...</p>
+<p><b>So I made you something instead.</b></p>
+<p>A little corner of the internet made just for my Chhutku.</p>
+<button class="btn" onclick="go('story')">OPEN YOUR SURPRISE 🎁</button>
+</div>
+</section>
+
+<section class="screen" id="story">
+<div class="card">
+<h2>How did we even get here? 🎮</h2>
+<p>Funny how a random game can introduce you to someone you never expected to become family.</p>
+<div class="timeline">
+<div class="step">🎮 RANDOM GAME</div><div class="arrow">↓</div>
+<div class="step">👋 RANDOM PEOPLE</div><div class="arrow">↓</div>
+<div class="step">😂 FRIENDS</div><div class="arrow">↓</div>
+<div class="step">💬 ENDLESS CONVERSATIONS</div><div class="arrow">↓</div>
+<div class="step">💀 PARTNERS IN CHAOS</div><div class="arrow">↓</div>
+<div class="step">🫶 2–3 YEARS</div><div class="arrow">↓</div>
+<div class="step"><b>❤️ MY LITTLE SISTER</b></div>
+</div>
+<p>At first, you were just someone I met while playing. Then came the conversations, jokes and all the chaos.</p>
+<p>And somewhere along the way...</p>
+<p><b>You became my Chhutku.</b></p>
+<button class="btn secondary" onclick="go('chronicles')">NEXT →</button>
+</div>
+</section>
+
+<section class="screen" id="chronicles">
+<div class="card">
+<h2>The Chhutku Chronicles 😂</h2>
+<p class="small">Tap the cards. You know you want to.</p>
+<div class="grid">
+<div class="tile" onclick="this.classList.toggle('open')"><strong>FEAR? WHAT'S THAT? 😭</strong><div class="answer">You're somehow the cutest little kiddo and one of the most fearless people I know.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>THE GAMING ERA 🎮</strong><div class="answer">Remember when we'd encounter toxic people and suddenly become the unofficial justice department? 😭</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>THE COMEBACKS 💀</strong><div class="answer">You somehow stand up for yourself, tease people and don't let their nonsense get to you.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>THE GOLDEN RULE 👑</strong><div class="answer">Nice to nice people. Strong to people who aren't nice. And somehow still my adorable Chhutku.</div></div>
+</div>
+<button class="btn secondary" onclick="go('dictionary')">NEXT →</button>
+</div>
+</section>
+
+<section class="screen" id="dictionary">
+<div class="card">
+<h2>The Chhutku Dictionary 📖😂</h2>
+<div class="grid">
+<div class="tile" onclick="this.classList.toggle('open')"><strong>“MAAR KHAOGE 🥺”</strong><div class="answer">Chhutku's universal warning. Somehow cute and threatening at the same time. 😭</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>“YAYAYAYAYAYA 🎉”</strong><div class="answer">Official sound of Chhutku being extremely happy. Side effect: Krrish Bhaiya copies the energy immediately.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>“YOU ARE THE BEST BHAI” 🥹</strong><div class="answer">An extremely dangerous sentence because Krrish Bhaiya immediately becomes emotionally happy. 🥹 → 😭 → 🫶 → YAYAYAYAYAYA</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>“CUTU PATUTU”</strong><div class="answer">An adorable little kiddo who somehow became Krrish Bhaiya's little sister. Title: permanent.</div></div>
+</div>
+<button class="btn secondary" onclick="go('why')">NEXT →</button>
+</div>
+</section>
+
+<section class="screen" id="why">
+<div class="card">
+<h2>Why you're my Chhutku 🫶</h2>
+<div class="grid">
+<div class="tile" onclick="this.classList.toggle('open')"><strong>GOOD SOUL ❤️</strong><div class="answer">You're genuinely kind to people who treat you well, and you don't let toxic people change who you are.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>FEARLESS 🌟</strong><div class="answer">You don't let random people intimidate you.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>SMART COOKIE 🧠</strong><div class="answer">You're aware of scams, frauds, stalking and the weird side of the internet. Stay smart and stay safe.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>YOUR ENERGY ✨</strong><div class="answer">Your happiness is ridiculously contagious. If you go YAYAYAYAYAYA, Krrish Bhaiya goes YAYAYAYAYAYA too.</div></div>
+<div class="tile" onclick="this.classList.toggle('open')"><strong>MY LITTLE SISSI 🥹</strong><div class="answer">Somewhere during these past few years, you became someone I genuinely think of as my own little sister.</div></div>
+</div>
+<button class="btn secondary" onclick="go('letter')">OPEN THE LETTER 💌</button>
+</div>
+</section>
+
+<section class="screen" id="letter">
+<div class="card">
+<h2>A letter for my Chhutku 💌</h2>
+<div class="letter">
+<p>Dear Chhutku,</p>
+<p>It's honestly funny to think that we met because of a random game.</p>
+<p>Back then, I obviously didn't know that a person I met online would eventually become someone I would genuinely think of as my little sister.</p>
+<p>Over these 2–3 years, we've talked, laughed, made fun of ridiculous people, survived our gaming chaos and created a whole collection of memories that probably wouldn't make sense to anyone else. 😭</p>
+<p>And somewhere between all of that, you became my Chhutku.</p>
+<p>One of the things I genuinely appreciate about you is the kind of person you are. You're kind to people who are kind to you, you don't let toxic people walk all over you, and you somehow manage to stay your cute little self while being ridiculously fearless.</p>
+<p>You're also one of those people who makes conversations feel lighter just by being there.</p>
+<p>Your words, your little ways of talking, your childish-cute energy... everything just makes you feel like my own little kiddo sisi.</p>
+<p>I know we're far away and we don't even have a proper photo together, but honestly, I don't think a photo is what makes someone family.</p>
+<p>It's the memories. It's the conversations. It's the stupid jokes. It's the random gaming chaos. It's knowing that someone is there.</p>
+<p>And that's what I value about having you as my little sister.</p>
+<p>So this Rakhi, I couldn't give you something you could physically hold.</p>
+<p>Instead, I wanted to give you something I could make myself.</p>
+<p>A tiny little place on the internet dedicated to my Chhutku. ❤️</p>
+<p>Please stay the same adorable, crazy, fearless, cutu patutu person you are.</p>
+<p>And remember...</p>
+<p>No matter how far away we are, you'll always have Krrish Bhaiya annoying you. 😭</p>
+<p>Happy Raksha Bandhan, Chhutku. 🫶</p>
+<p><b>— Krrish Bhaiya ❤️</b></p>
+</div>
+<button class="btn" onclick="go('secret')">I'M NOT CRYING 😭 →</button>
+</div>
+</section>
+
+<section class="screen" id="secret">
+<div class="card">
+<h2>Wait... there's something else 👀</h2>
+<p>Some memories simply cannot be explained to normal people.</p>
+<button class="btn" onclick="revealSecret()">THERE'S ONE MORE THING 👀</button>
+<div id="secretBox" class="secret hidden">
+<div class="small">THE CHHUTKU TEST</div>
+<div class="big">APKO MERE GHAR WALE MARENGE 😭😭😭</div>
+<p>If you understood that immediately...</p>
+<p><b>You officially passed.</b> 😂❤️</p>
+<button class="btn secondary" onclick="go('rakhi')">CONTINUE 🎀</button>
+</div>
+</div>
+</section>
+
+<section class="screen" id="rakhi">
+<div class="card">
+<h2>Your Digital Rakhi 🎀</h2>
+<div class="rakhi">🪢🎀🪢</div>
+<p>This Rakhi may not be something you can physically wear...</p>
+<p><b>But it still carries the same thing.</b></p>
+<p>Love. 🫶</p>
+<p>A reminder that distance can separate two people...</p>
+<p><b>...but it can't separate a bond.</b></p>
+<button class="btn" onclick="rakhiMagic()">TAKE YOUR RAKHI 🎀</button>
+<div id="rakhiMsg" class="hidden reveal"><p><b>THIS ONE'S YOURS, CHHUTKU ❤️</b></p></div>
+<button id="finalBtn" class="btn secondary hidden" onclick="go('final')">ONE LAST THING →</button>
+</div>
+</section>
+
+<section class="screen" id="final">
+<div class="card">
+<h2>One last thing...</h2>
+<p>Chhutku...</p>
+<p>You're not just someone I met through a game anymore.</p>
+<p><b>You're my little sister.</b></p>
+<p>And no matter how far away you are...</p>
+<p class="big" style="color:var(--deep)">You'll always be my Chhutku. ❤️</p>
+<h1 style="font-size:clamp(32px,8vw,62px)">HAPPY RAKSHA BANDHAN,<br>CHHUTKU 🎀❤️</h1>
+<p>Stay cute.<br>Stay fearless.<br>Stay smart.<br>Stay the same crazy little kiddo.</p>
+<p><b>— Krrish Bhaiya</b></p>
+<hr style="border:0;border-top:1px solid #edc9d3;margin:28px 0">
+<button class="btn secondary" onclick="lastSecret()">DON'T CLICK THIS.</button>
+<div id="lastBox" class="secret hidden">
+<p><b>I KNEW YOU WOULD CLICK IT. 😭</b></p>
+<p>That's exactly why you're my Chhutku.</p>
+<div class="big">MAAR KHAOGE 🥺</div>
+<div class="big">YAYAYAYAYAYA ❤️</div>
+<p>Now go away before you make Krrish Bhaiya emotional again. 😭🫶</p>
+</div>
+</div>
+</section>
+
+<footer>Made with love by Krrish Bhaiya ❤️</footer>
+<div id="petals"></div>
+
+<script>
+function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'})}
+function revealSecret(){document.getElementById('secretBox').classList.remove('hidden')}
+function lastSecret(){document.getElementById('lastBox').classList.remove('hidden'); petals()}
+function rakhiMagic(){document.getElementById('rakhiMsg').classList.remove('hidden');petals();setTimeout(()=>document.getElementById('finalBtn').classList.remove('hidden'),900)}
+function petals(){
+ const wrap=document.getElementById('petals');
+ for(let i=0;i<28;i++){
+  const s=document.createElement('span');
+  s.textContent=['🌸','✨','💗','🎀'][Math.floor(Math.random()*4)];
+  s.style.left=Math.random()*100+'vw';
+  s.style.animationDuration=(3+Math.random()*4)+'s';
+  s.style.fontSize=(14+Math.random()*18)+'px';
+  wrap.appendChild(s);
+  setTimeout(()=>s.remove(),7500);
+ }
+}
+</script>
+</body>
+</html>
